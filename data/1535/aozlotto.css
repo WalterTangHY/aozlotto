@@ -970,17 +970,13 @@ font-size:24px;
 
 .lotto-container {
 	display: inline-block;
-	margin-right: 10px;
-	margin-bottom:20px;
+	margin: 15px;
 	min-width: 350px;
 	width: 31%;
-	max-width: 500px;
+	max-width: 400px;
 }
 
 #AOZ{
-	min-width: 424px;
-	width:424px;
-	max-width: 500px;
 	box-shadow: 0px 0px 30px gold;
 }
 
