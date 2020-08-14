@@ -4,7 +4,7 @@ $(document).ready(function () {
     $("span#live").hide();
 
     //THY-modify here to output data location
-    url = "https://aozlotto.herokuapp.com/en/index.html";
+    url = "aozlotto.herokuapp.com/en/index.html";
     grabLiveResult(url);
 
     if ($("#time").val() >= 1900 && $("#time").val() <= 2040) {
@@ -52,7 +52,7 @@ function grabLiveResult(url) {
     return $.ajax({
         type: 'GET',
         contentType: "application/json; charset=utf-8",
-        url: 'https://aozlotto.herokuapp.com/en/getLiveResult.php',
+        url: 'aozlotto.herokuapp.com/en/getLiveResult.php',
         data: {},
         dataType: 'json',
         success: function (data) {
