@@ -7,7 +7,10 @@ $(document).ready(function () {
     url = "index.html";
     grabLiveResult(url);
 
-    if ($("#time").val() >= 1900 && $("#time").val() <= 2040) {
+    var dt= new Date();
+    var txtCurrentTime = dt.getHours() + "" + dt.getMinutes();
+    var currentTime = parseInt(txtCurrentTime);
+    if (currentTime>= 1900 && currentTime <= 2040) {
         $("span#live").show();
 
         var start = 10000 / 1000; var interval = 0;
